@@ -1,0 +1,21 @@
+.container{
+    margin-top: 30px;
+    height: 200px;
+    width: 400px;
+    background-color: black;
+    justify-content: space-between;
+}
+.row{
+    height: 100%;
+    width: 100%;
+}
+.col{
+    margin-left: 30px;
+    margin-top: 19px;
+    height: 80%;
+    width: 30%;
+    background-color: white;    
+}
+.kolona1{
+    height: 30% !important;
+}

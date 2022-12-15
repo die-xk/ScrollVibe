@@ -7,44 +7,36 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-  <script src="/scripts/admin.js"></script>
+  <script src="/scripts/index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
   <script src="/scripts/index.js"></script>
   <title>Home | Scroll Vibe</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-between">
-    <a class="navbar-brand d-inline-flex p-2" href="#">
-      <img src="/assets/images/logo.svg" alt="logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="sendtoend collapse navbar-collapse" id="navbar1">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item" id="color-changer">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item" id="color-changer">
-          <a class="nav-link" href="#">New</a>
-        </li>
-        <li class="nav-item color-changer">
-          <a class="nav-link" href="#">Popular</a>
-        </li>
-        <li class="nav-item" id="color-changer">
-          <a href="#" class="nav-link">Trending</a>
-        </li>
-        <li class="nav-item" id="color-changer">
-          <a href="/pages/log-in.html" class="nav-link">Log In</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="container-fluid">
+  <nav class="navbar">
+        <div class="left">
+            <img src="/assets/images/logo.svg" alt="logo">
+        </div>
+        <div class="right">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkBtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul class="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Log-in</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
     <div class="row">
-      <div class="col-sm-8">
-        <img src="/assets/images/image-web-3-desktop.jpg" height="60%" width="100%" alt="article">
+      <div class="col-lg-8 col-sm-12">
+        <img src="/assets/images/image-web-3-desktop.jpg" height="60%" width="100%" id="anduena" alt="article">
         <div class="container-fluid">
           <div class="row under-pic">
             <div class="col title">
@@ -68,7 +60,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-4 news-wrapper">
+      <div class="col-lg-4 col-sm-12 news-wrapper">
         <div class="container-fluid news-feed">
           <div class="row">
             <h1 class="new">New</h1>
@@ -110,14 +102,14 @@
     </div>
   </div>
   <br><br>
-  <div class="container-fluid">
+  <div class="container" id="bottom-container">
     <div class="row">
-      <div class="col arcade-computer">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-2 col-lg-4 text-center">
         <div class="row">
-          <div class="col-4">
-            <img src="/assets/images/image-retro-pcs.jpg" height="125vh" alt="computer">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <img src="/assets/images/image-retro-pcs.jpg" height="125vh" class="news-pics" alt="computer">
           </div>
-          <div class="col-8">
+          <div class="col-12 col-sm-12 col-md-8 col-lg-8">
             <h1 id="header">01</h1>
             <h2 id="subtitle">Revivng Retro PCs</h2>
             <h3 id="text">
@@ -126,12 +118,12 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-2 col-lg-4 text-center">
         <div class="row">
-          <div class="col-4">
-            <img src="/assets/images/image-top-laptops.jpg" height="125vh" alt="computer">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <img src="/assets/images/image-top-laptops.jpg" height="125vh"  class="news-pics" alt="computer">
           </div>
-          <div class="col-8">
+          <div class="col-12 col-sm-12 col-md-8 col-lg-8">
             <h1 id="header">02</h1>
             <h2 id="subtitle">Top 10 Laptops of 2022</h2>
             <h3 id="text">
@@ -140,12 +132,12 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div id="last-news" class="col-xs-12 col-sm-6 col-sm-offset-2 col-lg-4 text-center">
         <div class="row">
-          <div class="col-4">
-            <img src="/assets/images/image-gaming-growth.jpg" height="125vh" alt="computer">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <img src="/assets/images/image-gaming-growth.jpg" height="125vh" class="news-pics" alt="computer">
           </div>
-          <div class="col-8">
+          <div class="col-12 col-sm-12 col-md-8 col-lg-8">
             <h1 id="header">03</h1>
             <h2 id="subtitle">The Growth of Gaming</h2>
             <h3 id="text">

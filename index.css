@@ -143,8 +143,10 @@ body{
 .right ul li a {
     padding: 10px 20px;
     font-size: 1.2rem;
+    font-weight: 700;
     color: black;
     cursor: pointer;
+    text-transform: uppercase;
     text-decoration: none;
     transition: all 1s;
 }

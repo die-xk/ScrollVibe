@@ -15,28 +15,28 @@
   <title>Home | Scroll Vibe</title>
 </head>
 <body>
-  <nav class="navbar">
-        <div class="left">
+  <nav class="navbar"> <!--navbar wrapper-->
+        <div class="left"> <!--logo container-->
             <img src="assets/images/logo.svg" alt="logo">
         </div>
-        <div class="right">
+        <div class="right"> <!--hamburger menu and links-->
             <input type="checkbox" id="check">
             <label for="check" class="checkBtn">
                 <i class="fa fa-bars"></i>
             </label>
             <ul class="list">
-                <li><a href="/index.htmls">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="pages/news-page.html">New</a></li>
                 <li><a href="pages/log-in.html">Log-in</a></li>
             </ul>
         </div>
-    </nav>
-    <div class="container">
+  </nav>
+  <div class="container">
     <div class="row">
       <div class="col-lg-8 col-sm-12">
         <img src="assets/images/image-web-3-desktop.jpg" height="60%" width="100%" id="main-image" alt="article">
         <div class="container-fluid">
-          <div class="row under-pic">
+          <div class="row add-padding">
             <div class="col title">
               <h1 class="text-h1">
                 The Bright <br>
@@ -52,7 +52,7 @@
                 fulfillong its promise?
               </h4>
               <a href="#">
-                <button type="button" class="button-read-more">READ MORE</button>
+                <button type="button" id="button-read-more">READ MORE</button>
               </a>
             </div>
           </div>
@@ -101,7 +101,7 @@
   </div>
   <br><br>
   <div class="container" id="bottom-container">
-    <div class="row">
+    <div class="row" id="footer-news">
       <div class="col-xs-12 col-sm-6 col-md-12 col-sm-offset-2 col-lg-4 text-center">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-4 col-lg-4">
@@ -130,7 +130,7 @@
           </div>
         </div>
       </div>
-      <div id="last-news" class="col-xs-12 col-sm-6 col-md-12 col-sm-offset-2 col-lg-4 text-center">
+      <div class="col-xs-12 col-sm-6 col-md-12 col-sm-offset-2 col-lg-4 text-center">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-4 col-lg-4">
             <img src="assets/images/image-gaming-growth.jpg" height="125vh" class="news-pics" alt="computer">
@@ -147,6 +147,5 @@
     </div>
   </div>
   <br><br><br>
-  </div>
 </body>
 </html>

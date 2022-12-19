@@ -10,7 +10,7 @@ function validateForm() {
       return false
     }else{
     // Set the new URL to redirect the user to
-    var newUrl = 'http://127.0.0.1:3000/index.html';
+    var newUrl = 'http://127.0.0.1:5500/index.html';
     // Redirect the user to the new URL
     window.location.replace(newUrl);
     }

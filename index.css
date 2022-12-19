@@ -20,10 +20,10 @@ body{
     font-weight: 400;
     font-size: 14px;
 }
-.under-pic{
+.add-padding{
     padding-top: 4vh;
 }
-.button-read-more{
+#button-read-more{
     margin: 2vh 0 0 0;
     padding: 2vh 5vh 2vh 5vh;
     border: none;
@@ -78,7 +78,7 @@ body{
     font-size: 14px;
     opacity: 0.8;
 }
-.button-read-more:hover{
+#button-read-more:hover{
     cursor: pointer;
     background-color: hsl(240, 100%, 5%) ;
     transition: background-color 0.5s ease;
@@ -91,22 +91,6 @@ body{
     justify-content: flex-end;
 }
 
-@media only screen and (max-width: 575px) {
-    body{
-        padding: 0;
-    }
-    .news-pics{
-        width: auto;
-        height: 100%;
-    }
-    #main-image{
-        aspect-ratio: 2/1;
-        height: auto;
-    }
-    #last-news{
-        padding-bottom: 10vh;
-    }
-}
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -145,7 +129,6 @@ body{
     font-size: 1.2rem;
     color: black;
     cursor: pointer;
-    text-transform: uppercase;
     text-decoration: none;
     transition: all 1s;
 }
@@ -159,6 +142,17 @@ body{
 @media screen and (max-width:924px) {
     body{
         padding: 0;
+    }
+    .news-pics{
+        width: auto;
+        height: 100%;
+    }
+    #main-image{
+        aspect-ratio: 2/1;
+        height: auto;
+    }
+    #footer-news{
+        padding-bottom: 10vh;
     }
     .news-wrapper{
         position: relative;
